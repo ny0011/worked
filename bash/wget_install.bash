@@ -22,4 +22,5 @@ for pkg_uri in "${pkg_arr[@]}"; do
     cd ..
 done
 
-rm -f !(wget_install.bash)
+echo "wget is installed"
+find -not -name "wget_install.bash" -delete
